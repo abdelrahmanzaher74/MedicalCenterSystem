@@ -81,7 +81,7 @@ MedicalCenterSystem/
 
 ## 👨‍💻 Author
 
-Mina Reda
+Abdelrahman Zaher
 
 ---
 
