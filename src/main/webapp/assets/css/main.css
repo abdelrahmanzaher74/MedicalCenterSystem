@@ -1,0 +1,184 @@
+/* ===== Global ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ===== Container ===== */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ===== Title ===== */
+.title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* ===== Card ===== */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* ===== Inputs ===== */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Add Button */
+.btn-add {
+    background: #007bff;
+    color: white;
+    width: 100%;
+}
+
+.btn-add:hover {
+    background: #0056b3;
+}
+
+/* Update Button */
+.btn-update {
+    background: #ffc107;
+    color: black;
+}
+
+/* Delete Link */
+.btn-delete {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* ===== Table ===== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background: #007bff;
+    color: white;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+}
+
+.table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.table tr:hover {
+    background: #eef3ff;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    margin: 10% auto;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+/* ===== Dashboard Grid ===== */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* ===== Cards ===== */
+.nav-card {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    background: #f1f5ff;
+}
+.filter-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-box input,
+.filter-box select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}.filter-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-box input,
+.filter-box select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-box {
+    background: white;
+    width: 400px;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.filter-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}

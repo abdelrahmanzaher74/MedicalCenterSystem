@@ -1,0 +1,106 @@
+/* ===== Sidebar ===== */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #1e3c72;
+    color: white;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    margin: 12px 0;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Main Content ===== */
+.main {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+/* ===== Topbar ===== */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* ===== Stats Section ===== */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* ===== Stat Cards ===== */
+.stat-card {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+/* ===== Colors ===== */
+.blue {
+    background: #007bff;
+}
+
+.green {
+    background: #28a745;
+}
+
+.orange {
+    background: #fd7e14;
+}
+
+.red {
+    background: #dc3545;
+}
+
+/* ===== Card (Chart Container) ===== */
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+}

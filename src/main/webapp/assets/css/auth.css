@@ -1,0 +1,154 @@
+/* ================= BODY BACKGROUND ================= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    /* 🔥 المسار النهائي + كسر الكاش */
+    background: url('/MedicalCenterSystem/assets/images/bg.jpg?v=1') no-repeat center center fixed;
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+/* Overlay خفيف احترافي */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+}
+
+/* ================= CONTAINER ================= */
+.auth-container {
+    width: 360px;
+    padding: 35px;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+
+    text-align: center;
+    color: white;
+
+    position: relative;
+    z-index: 2;
+
+    animation: fadeUp 0.8s ease;
+}
+
+/* ================= LOGO ================= */
+.logo {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #00e5ff;
+}
+
+/* ================= TITLE ================= */
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* ================= INPUT ================= */
+.input-group {
+    display: flex;
+    align-items: center;
+
+    margin: 15px 0;
+    padding: 12px;
+
+    background: rgba(255,255,255,0.2);
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.input-group:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.input-group span {
+    margin-right: 10px;
+    color: #00e5ff;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Focus Glow */
+.input-group:focus-within {
+    box-shadow: 0 0 10px #00e5ff;
+}
+
+/* ================= BUTTON ================= */
+button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(90deg, #2979ff, #00c853);
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,255,150,0.8);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* ================= LINKS ================= */
+a {
+    color: #00e5ff;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ================= ERROR ================= */
+.error {
+    color: #ff5252;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

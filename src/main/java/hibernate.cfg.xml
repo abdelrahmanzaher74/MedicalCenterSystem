@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- 🔌 Database Connection -->
+        <property name="hibernate.connection.driver_class">
+            com.microsoft.sqlserver.jdbc.SQLServerDriver
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:sqlserver://localhost:1433;databaseName=MedicalCenter;encrypt=true;trustServerCertificate=true
+        </property>
+
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password">123</property>
+
+        <!-- 🧠 Dialect -->
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.SQLServerDialect
+        </property>
+
+        <!-- 🔧 Hibernate Settings -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- 🔗 Models -->
+        <mapping class="com.medical.model.Patient"/>
+        <mapping class="com.medical.model.Department"/>
+        <mapping class="com.medical.model.Staff"/>
+        <mapping class="com.medical.model.Appointment"/>
+        <mapping class="com.medical.model.Equipment"/>
+        <mapping class="com.medical.model.Maintenance"/>
+
+    </session-factory>
+</hibernate-configuration>
