@@ -91,4 +91,6 @@ Abdelrahman Zaher
 * Update DB credentials if needed
 * Use the SQL file for best compatibility
 
+Documentation:
+https://drive.google.com/drive/u/2/folders/1jLBxSanezHjI-WuPO-1uRyOTaC-RMSZh
 ---
